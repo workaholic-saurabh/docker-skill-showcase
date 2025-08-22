@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: ./project1
+    ports:
+      - "8080:8080"
+
+  app:
+    build:
+      context: ./project2
+    ports:
+      - "8081:8080"
+
